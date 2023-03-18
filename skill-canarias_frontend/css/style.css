@@ -1,0 +1,131 @@
+#ejemplo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  text-align: justify;
+}
+#ejemplo-container .service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 105px;
+}
+#ejemplo-container .service div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+#ejemplo-container .service div div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+  padding: 25px;
+}
+#ejemplo-container .service div .image-container {
+  width: 400px;
+}
+#ejemplo-container .service div .image-container .image-service {
+  width: 100%;
+}
+
+input[type=submit],
+input[type=button],
+button {
+  padding: 10px;
+  text-transform: uppercase;
+  color: #152E3D;
+  font-family: "Hind";
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.boton:hover {
+  box-shadow: 0px 0px 5px 2px lightgray;
+}
+
+.boton-principal {
+  background-color: #0DDEB8;
+  border-color: #76D6C4;
+}
+
+.boton-principal:hover,
+.boton-principal:active {
+  background-color: #76D6C4;
+  border-color: #76D6C4;
+}
+
+.boton-secundario {
+  background-color: #70C8FF;
+  border-color: #A3D4FF;
+}
+
+.boton-secundario:hover,
+.boton-secundario:active {
+  background-color: #A3D4FF;
+  border-color: #A3D4FF;
+}
+
+.boton-cancelar {
+  background-color: #F2F2F2;
+  border-color: #E3E3E3;
+}
+
+.boton-cancelar:hover,
+.boton-cancelar:active {
+  background-color: #E3E3E3;
+  border-color: #E3E3E3;
+}
+
+input {
+  border-radius: 5px;
+  border: 2px solid lightgray;
+  font-family: "Hind";
+}
+
+.logo {
+  width: 63px;
+}
+
+.dropdown-toggle::after {
+  content: none;
+}
+
+.logout {
+  margin-top: 15rem;
+}
+
+.separator {
+  border-top: 2px solid lightgray;
+}
+
+input:focus {
+  outline: none !important;
+  border: 2px solid #0DDEB8 !important;
+  box-shadow: none !important;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-family: Raleway;
+}
+
+h2 {
+  font-family: Esteban;
+}
+
+p {
+  font-family: "Hind";
+}/*# sourceMappingURL=style.css.map */
