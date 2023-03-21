@@ -9,9 +9,9 @@ function init(){
   // Routes.js
   exportLogicRoutes();
   // Users.js
-  users.init();
+  //users.init();
   // users.isUserAuth();
-  window.isUserAuth = users.isUserAuth();
+  //window.isUserAuth = users.isUserAuth();
   window.baseUrl= baseUrl;
 }
 

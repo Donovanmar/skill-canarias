@@ -66,11 +66,8 @@ Route::middleware(['auth:sanctum'])->group(function () {
     Route::post('/verify', [AuthController::class, 'verify']);
 });
 
-Route::get('/services', 'App\Http\Controllers\EjemploController@index');
-Route::post('/services', 'App\Http\Controllers\EjemploController@store');
-Route::get('/services/{service}', 'App\Http\Controllers\EjemploController@show');
-Route::put('/services/{service}', 'App\Http\Controllers\EjemploController@update');
-Route::delete('/services/{service}', 'App\Http\Controllers\EjemploController@destroy');
+Route::get('/maps', 'App\Http\Controllers\MapController@index');
+Route::post('/maps', 'App\Http\Controllers\MapController@store');
 
 
 

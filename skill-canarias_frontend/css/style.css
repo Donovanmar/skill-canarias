@@ -1,40 +1,45 @@
-#ejemplo-container {
+#form-container {
+  box-shadow: 0px 0px 15px 5px rgb(230, 230, 230);
+  border-radius: 5px;
+  padding: 25px;
+}
+#form-container div {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   width: 100%;
-  text-align: justify;
+  padding: 25px;
 }
-#ejemplo-container .service {
+#form-container div input {
+  margin: 5px;
+}
+#form-container .zones {
+  font-weight: bold;
+}
+
+#map-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  padding-top: 25px;
-  padding-bottom: 105px;
 }
-#ejemplo-container .service div {
+#map-container div {
+  background-color: rgb(204, 204, 204);
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
+  width: auto;
 }
-#ejemplo-container .service div div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-  height: 100%;
-  padding: 25px;
+#map-container div div {
+  background-color: rgb(218, 218, 218);
+  width: 14px;
+  height: 14px;
 }
-#ejemplo-container .service div .image-container {
-  width: 400px;
+
+.parcela-urban {
+  background-color: yellow;
 }
-#ejemplo-container .service div .image-container .image-service {
-  width: 100%;
+
+.parcela-nature {
+  background-color: green;
 }
 
 input[type=submit],

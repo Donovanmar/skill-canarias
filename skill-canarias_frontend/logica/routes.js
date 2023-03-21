@@ -1,11 +1,11 @@
 //Template imports for the different page sections
 //import { variable as template } from './../plantillas/crearposts.js';
 //import { variableContainingGeneralStructure as template } from './../plantillas/crearactividades.js';
-import { login as loginTemplate } from './../templates/login.js';
-import { register as registerTemplate } from './../templates/registro.js';
-import { profile as profileTemplate } from './../templates/perfil.js';
-import { home as homeTemplate} from './../templates/home.js';
-import { ejemplo as exampleTemplate } from './../templates/ejemplo.js';
+// import { login as loginTemplate } from './../templates/login.js';
+// import { register as registerTemplate } from './../templates/registro.js';
+// import { profile as profileTemplate } from './../templates/perfil.js';
+// import { home as homeTemplate} from './../templates/home.js';
+import { form as formConfigTemplate } from './../templates/formulario-configuracion.js';
 
 // Importaciones de los métodos de render de cada vista
 import * as View from './../viewImports.js';
@@ -19,41 +19,41 @@ export function exportLogicRoutes() {
     const routes = {
         "/": {
             pathname: '/',
-            template: loginTemplate,
-            views: [View.renderLogin]
+            template: formConfigTemplate,
+            views: [View.RenderConfigForm]
         },
-        login: {
-            pathname: '/login',
-            template: loginTemplate,
-            views: [View.renderLogin]
-        },
-        register: {
-            pathname: '/register',
-            template: registerTemplate,
-            views: [View.renderRegister]
-        },
-        profile: {
-            pathname: '/profile',
-            template: profileTemplate,
-            views: [View.renderProfile],
-            conditions: [isUserAuth]
-        },
+        // login: {
+        //     pathname: '/login',
+        //     template: loginTemplate,
+        //     views: [View.renderLogin]
+        // },
+        // register: {
+        //     pathname: '/register',
+        //     template: registerTemplate,
+        //     views: [View.renderRegister]
+        // },
+        // profile: {
+        //     pathname: '/profile',
+        //     template: profileTemplate,
+        //     views: [View.renderProfile],
+        //     conditions: [isUserAuth]
+        // },
         // passwordreset: {
         //   pathname: '/home',
         //   template: homeTemplate,
         //   views: [homeView, homeSideView]
         // },
-        home: {
-            pathname: '/home',
-            template: homeTemplate,
-            views: [View.homeView, View.homeSideView],
-            conditions: [isUserAuth]
-        },
-        example: {
-            pathname: '/example',
-            template: exampleTemplate,
-            views: [View.RenderExample]
-        }
+        // home: {
+        //     pathname: '/home',
+        //     template: homeTemplate,
+        //     views: [View.homeView, View.homeSideView],
+        //     conditions: [isUserAuth]
+        // },
+        // example: {
+        //     pathname: '/example',
+        //     template: exampleTemplate,
+        //     views: [View.RenderExample]
+        // }
         // route: {
         //     pathname: '/pathname',
         //     template: template,

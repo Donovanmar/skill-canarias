@@ -3,22 +3,33 @@
  * de cada vista en los templates
  */
 
-// HOME
-export { renderIndex as homeView } from './views/home/javaIndex.js';
-export { renderIndex as homeSideView } from './views/home/javaIndexLog.js'
+// // HOME
+// export { renderIndex as homeView } from './views/home/javaIndex.js';
+// export { renderIndex as homeSideView } from './views/home/javaIndexLog.js'
 
-// PERFIL
-export { renderProfile as renderProfile } from './views/perfil/perfil.js';
+// // PERFIL
+// export { renderProfile as renderProfile } from './views/perfil/perfil.js';
 
-//LOGIN
-export { render as renderLogin } from './views/login/login.js';
+// //LOGIN
+// export { render as renderLogin } from './views/login/login.js';
 
-//REGISTRO
-export { render as renderRegister } from './views/register/registro.js';
+// //REGISTRO
+// export { render as renderRegister } from './views/register/registro.js';
+
+// //EJEMPLO
+// export { renderEjemplo as RenderExample } from './views/ejemplo/ejemplo.js';
 
 
-//EJEMPLO
-export { renderEjemplo as RenderExample } from './views/ejemplo/ejemplo.js';
+
+
+
+
+
+// FORMULARIO
+export { renderFormConfig as RenderConfigForm} from './views/formulario-configuracion/formulario-configuracion.js';
+
+
+
 
 
 
